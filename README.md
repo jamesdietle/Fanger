@@ -1,1 +1,1 @@
-Designed to help with threat intelligence and indicators.
+Designed to help with threat intelligence and indicators. Fanger will remove obfuscation so that the indicator is ready to be run in an environment. DeFanger will obfuscate the indicator making it safer to transfer. 
