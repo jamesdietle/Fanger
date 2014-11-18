@@ -1,0 +1,20 @@
+#!/usr/bin/python
+import sys
+
+filename= sys.argv
+openfile = filename[1]
+
+filer = open(openfile, 'r')
+openfile= openfile.replace(".txt", "-defanged.txt")
+file = open(openfile, "w")
+
+for line in filer:
+    str = line
+    str = str.replace(".", "[.]",1)
+    str = str.replace("http", "hxxp")
+    str = str.replace("@", "[AT]")
+    print str;
+    file.write(str)
+
+file.close()
+filer.close()
